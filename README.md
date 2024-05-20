@@ -4,7 +4,7 @@ git clone https://github.com/aries-robot/PyMesh.git
 cd PyMesh
 git submodule update --init
 export PYMESH_PATH=`pwd`
-apt-get install libeigen3-dev libgmp-dev libgmpxx4ldbl libmpfr-dev libboost-dev libboost-thread-dev libtbb-dev python3-dev
+sudo apt-get install libeigen3-dev libgmp-dev libgmpxx4ldbl libmpfr-dev libboost-dev libboost-thread-dev libtbb-dev python3-dev
 pip install -r $PYMESH_PATH/python/requirements.txt
 ./setup.py build
 ./setup.py install
