@@ -1,3 +1,16 @@
+### Install Summary ###
+```sh
+cd ~/source
+git clone https://github.com/aries-robot/PyMesh.git
+cd PyMesh
+git submodule update --init
+export PYMESH_PATH=`pwd`
+apt-get install libeigen3-dev libgmp-dev libgmpxx4ldbl libmpfr-dev libboost-dev libboost-thread-dev libtbb-dev python3-dev
+pip install -r $PYMESH_PATH/python/requirements.txt
+./setup.py build
+./setup.py install
+```
+
 [![CircleCI](https://circleci.com/gh/PyMesh/PyMesh/tree/main.svg?style=svg)](https://circleci.com/gh/PyMesh/PyMesh/tree/main)
 [![Build Status](https://travis-ci.org/PyMesh/PyMesh.svg?branch=main)](https://travis-ci.org/PyMesh/PyMesh)
 [![Documentation Status](https://readthedocs.org/projects/pymesh/badge/?version=latest)](https://pymesh.readthedocs.io/en/latest/?badge=latest)
