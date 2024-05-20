@@ -1,6 +1,5 @@
 ### Install Summary ###
 ```sh
-cd ~/source
 git clone https://github.com/aries-robot/PyMesh.git
 cd PyMesh
 git submodule update --init
